@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  buttom
 } from 'react-router-dom';
 import logo from './../logo.svg';
 import './../App.css';
@@ -13,41 +14,44 @@ import database from "firebase/database";
 import firestore from "firebase/firestore";
 // firebase Auth UI
 import * as firebaseui from 'firebaseui';
-// Firebase Calls
-import * as callsDB from '../utils/firebase/getData.js';
 import * as authFB from '../utils/firebase/utils.js';
 
-class Dashboard extends Component {
+class Signup extends React.Component {
 
   constructor(props){
     super(props);
     this.state ={
-      rootDB: '',
-      email: ''
+      rootDB: this.props.rootDB
     }
   }
 
   componentDidMount(){
     //console.log(this.props.rootDB);
-    //authFB._initAuth()
-    let user = 1;
-    let self = this;
-    // TODO: Connect users to firebase auth
-    let userData = firebase.database().ref().child(`users/${user}/account/`)
-    //let users = firebase.database().ref().child(`users/1/account/`)
-    userData.on('value', function(snapshot) {
-      // TODO: Ringrazia dado per il self pattern
-      self.setState({ rootDB : snapshot.val(), email: snapshot.val().email })
-    });
+    authFB._initAuth()
   }
+
+  componentWillReceiveProps(newProps) {
+    // receive props from parent
+    this.setState({
+      rootDB: newProps.rootDB
+    });
+
+  }
+
 
   render() {
     return (
       <div>
-        <h2>{ `Ciao, ${this.state.email}` }</h2>
+        <div>
+          <h1>Signup</h1>
+          <div id="sign-in-status"></div>
+          <div id="sign-in"></div>
+          <div id="account-details"></div>
+        </div>
+        <div id='firebaseui-auth-container' />
       </div>
     );
   }
 }
 
-export default Dashboard;
+export default Signup;

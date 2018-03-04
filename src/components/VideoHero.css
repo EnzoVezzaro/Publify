@@ -1,0 +1,8 @@
+.videoContainer{
+  height: 400px;
+  background-image: url('../assets/img/videoBackground.jpg');
+}
+.videoContainer .videoContent{ height: 100%; }
+.videoContainer .videoContent .videoPlay{ display: flex; justify-content: center; align-items: center;}
+.videoContainer .videoContent .videoPlay .videoPlayImg{ width: 50px; }
+.videoContainer .videoContent .videoPunchline{ display: flex; justify-content: center; align-items: center; }

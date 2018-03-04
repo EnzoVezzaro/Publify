@@ -1,0 +1,50 @@
+/* +++++++++++++++
++++++++ BASE +++++++++
+++++++++++++++ */
+
+/* Fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+/*
+Colors
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 36px;
+  font-weight: lighter;
+  color: #fff;
+}
+h2{
+  font-size: 28px;
+  font-weight: lighter;
+  color: #7954B6;
+}
+h3{
+  font-size: 24px;
+  font-weight: lighter;
+  color: #7954B6;
+}
+h4{
+  font-size: 21px;
+  font-weight: lighter;
+  color: #7954B6;
+}
+h5{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
+  color: #fff;
+}
+p{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
+  color: #565656;
+}

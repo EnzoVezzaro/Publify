@@ -1,0 +1,8 @@
+.detailListContainer{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.detailListContainer .detailListImage{ margin-right: 20px; }
+.detailListContainer .detailListImage img{ margin:0; width: 50px;}
+.detailListContainer .detailListBody{}
+.detailListContainer .detailListBody .detailListTitle{}

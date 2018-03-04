@@ -1,0 +1,13 @@
+.featuresCardsContainer{}
+.featuresCardsContainer .featuresCards{ box-shadow: 5px 5px 35px 0 rgba(0,0,0,0.2); width: 90%; }
+.featuresCardsContainer .featuresCards .featuresCardImage{ display: flex; justify-content: center; align-self: center; width: 50%; }
+.featuresCardsContainer .featuresCards .featuresCardBody{ flex-direction: row; display: flex; flex-wrap: wrap; padding: 0 30px; }
+.featuresCardsContainer .featuresCards .featuresCardBody .featuresContent { width: 60%; }
+.featuresCardsContainer .featuresCards .featuresCardBody .featuresContent .featuresCardTitle{ font-size: 18px; font-weight: lighter; color: #7954B6;}
+.featuresCardsContainer .featuresCards .featuresCardBody .featuresContent .featuresCardSubtitle{}
+.featuresCardsContainer .featuresCards .featuresCardBody .featuresButton{ width: 40%; display: flex; justify-content: flex-end; }
+.featuresCardsContainer .featuresCards .featuresCardBody .featuresButton .featuresCardBodyImage{ width: auto; height: 50px;}
+/* Cards */
+#featuresCard1{ z-index: 1; position: relative; left: 20%; }
+#featuresCard2{ z-index: 2; position: absolute; width: 100%; top: 10%; left: 10%; }
+#featuresCard3{ z-index: 3; position: absolute; width: 100%; top: 20%; }
