@@ -6,56 +6,44 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+import './App.css';
+
 // DB
 import firebase from 'firebase';
 import auth from "firebase/auth";
 import database from "firebase/database";
 import firestore from "firebase/firestore";
+// firebase Auth UI
+import * as firebaseui from 'firebaseui';
 // Routing
 import HomePage from './routes/HomePage.js';
 import Dashboard from './routes/Dashboard.js';
+import Authentication from './routes/Authentication.js';
+import Signup from './routes/Signup.js';
+// Components
 
 class App extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      database: '',
-      firestore: '',
-      first: '',
-      rootDB: '',
     }
 
-    var config = {
-      apiKey: "AIzaSyALUqJAFbeKcqluUkyg7wwYGzHHWf3pw0w",
-      authDomain: "moviapp-7943b.firebaseapp.com",
-      databaseURL: "https://moviapp-7943b.firebaseio.com",
-      projectId: "moviapp-7943b",
-      storageBucket: "",
-      messagingSenderId: "902800466121"
+    // Initialize Firebase // TODO: Move this to env.file
+    this.state.config = {
+      apiKey: process.env.REACT_APP_FB_APIKEY,
+      authDomain: process.env.REACT_APP_FB_AUTHDOMAIN,
+      databaseURL: process.env.REACT_APP_FB_DATABASEURL,
+      projectId: process.env.REACT_APP_FB_PROJECTID,
+      storageBucket: process.env.REACT_APP_FB_STORAGEBUCKET,
+      messagingSenderId: process.env.REACT_APP_FB_MESSAGESENDERID
     };
 
-    // Initialize Firebase
-    firebase.initializeApp(config);
+    firebase.initializeApp(this.state.config);
     // Take db to state
-    this.state.firestore = firebase.firestore();
-    this.state.database = firebase.database();
 
   }
 
   componentWillMount(){
-
-    let users = firebase.database().ref().child('users/1/')
-
-    let self = this;
-
-    users.on('value', function(snapshot) {
-      // TODO: Ringrazia dado per il self pattern
-      self.setState({
-        first: snapshot.val().first,
-        last: snapshot.val().last,
-      });
-
-    });
 
   }
 
@@ -63,17 +51,10 @@ class App extends React.Component{
     return (
       <Router>
         <div>
-          <ul>
-            <li><Link to="/">{this.state.first}</Link></li>
-            <li><Link to="/login">About</Link></li>
-            <li><Link to="/signup">{this.state.last}</Link></li>
-          </ul>
-
-          <hr/>
-
-          <Route exact path="/" render={() => <HomePage rootDB={this.state.first} />}/>
-          <Route path="/login" component={Dashboard}/>
-          <Route path="/signup" component={Dashboard}/>
+          <Route exact path="/" render={() => <HomePage FBConfig={this.state.config} />}/>
+          <Route path="/authentication" render={() => <Authentication FBConfig={this.state.config} />}/>
+          <Route path="/signup" component={Signup}/>
+          <Route path="/dashboard" component={Dashboard}/>
         </div>
       </Router>
     );

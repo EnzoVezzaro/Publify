@@ -1,0 +1,11 @@
+.featuresContainer{
+  height: 750px;
+}
+.featuresContainer .featuresPunchline{
+  margin: 50px 0;
+  text-align: center;
+}
+.featuresContainer .featuresDetails{
+  height: 450px;
+  justify-content: space-around;
+}

@@ -1,0 +1,46 @@
+.HeroContainer{
+  height: 450px;
+  background-color: red;
+}
+.FeaturesContainer{
+  height: 650px;
+  background-color: blue;
+}
+.VideoContainer{
+  height: 400px;
+  background-color: yellow;
+}
+.MissionContainer{
+  height: 600px;
+  background-color: green;
+}
+.MissionPuchLine{
+
+}
+.MissionTable{
+
+}
+.CustomizationContainer{
+  height: 650px;
+  background-color: red;
+}
+.PricingContainer{
+  height: 650px;
+  background-color: blue;
+}
+.TestimonialsContainer{
+  height: 350px;
+  background-color: yellow;
+}
+.BlogContainer{
+  height: 350px;
+  background-color: gray;
+}
+.StoresContainer{
+  height: 300px;
+  background-color: purple;
+}
+.FooterContainer{
+  height: 400px;
+  background-color: pink;
+}
