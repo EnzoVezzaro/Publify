@@ -28,7 +28,7 @@ class App extends React.Component{
     this.state={
     }
 
-    // Initialize Firebase // TODO: Move this to env.file
+    // Initialize Firebase || TODO: Move this to env.file
     this.state.config = {
       apiKey: process.env.REACT_APP_FB_APIKEY,
       authDomain: process.env.REACT_APP_FB_AUTHDOMAIN,
