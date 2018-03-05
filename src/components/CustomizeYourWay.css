@@ -1,0 +1,5 @@
+.customizeContainer{ padding-top: 100px; }
+.customizeContainer .customizeLeft{ display: flex; justify-content: space-around; flex-direction: column; }
+.customizeContainer .customizeLeft .customizeDetails{ margin-bottom: 20px; }
+.customizeContainer .customizeRight img{ height: 600px; }
+.customizeContainer .customizePunchline{ margin-bottom: 30px; }

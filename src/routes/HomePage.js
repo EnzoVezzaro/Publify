@@ -21,6 +21,8 @@ import Menu from "../components/Menu.js";
 import Hero from "../components/Hero.js";
 import Features from "../components/Features.js";
 import VideoHero from "../components/VideoHero.js";
+import OurMission from "../components/OurMission.js";
+import CustomizeYourWay from "../components/CustomizeYourWay.js";
 import "../css/Containers.css";
 
 class HomePage extends React.Component {
@@ -44,62 +46,6 @@ class HomePage extends React.Component {
 
   }
 
-// TODO: Mover en el render de poco en poco
-/*
-
-<Row className={'MissionContainer'}>
-  <Row className={'MissionPuchLine'}>
-    <Col>.col</Col>
-  </Row>
-  <Row className={'MissionTable'}>
-    <Col>.col</Col>
-    <Col>.col</Col>
-    <Col>.col</Col>
-  </Row>
-</Row>
-<Row className={'CustomizationContainer'}>
-  <Col>
-    <Row className={'CustomizationPuchLine'}>
-    </Row>
-    <Row className={'CustomizationTable'}>
-    </Row>
-  </Col>
-  <Col>
-    <Row className={'CustomizationTable'}>
-    </Row>
-  </Col>
-</Row>
-<Row className={'PricingContainer'}>
-  <Row className={'PricingPuchLine'}>
-  </Row>
-  <Row className={'PricingTable'}>
-  </Row>
-</Row>
-<Row className={'TestimonialsContainer'}>
-  <Row className={'TestimonialsPuchLine'}>
-  </Row>
-  <Row className={'TestimonialsCarousel'}>
-  </Row>
-</Row>
-<Row className={'BlogContainer'}>
-  <Row className={'BlogPuchLine'}>
-  </Row>
-  <Row className={'BlogPosts'}>
-  </Row>
-</Row>
-<Row className={'StoresContainer'}>
-  <Row className={'StoresPuchLine'}>
-  </Row>
-  <Row className={'StoresLogos'}>
-  </Row>
-</Row>
-<Row className={'FooterContainer'}>
-  <Row className={'FooterPuchLine'}>
-  </Row>
-</Row>
-
-*/
-
   render() {
     return (
       <div>
@@ -110,6 +56,10 @@ class HomePage extends React.Component {
           <Features />
 
           <VideoHero />
+
+          <OurMission />
+
+          <CustomizeYourWay />
 
       </div>
     );

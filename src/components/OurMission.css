@@ -1,0 +1,24 @@
+.ourMissionContainer{
+  height: auto;
+  background-image: url('../assets/img/ourMissionBackground.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+}
+.ourMissionContainer .ourMissionPunchline{
+  padding-bottom: 70px;
+}
+.ourMissionContainer .ourMissionDetails{
+  margin-bottom: 50px;
+}
+
+/* TEXT */
+.ourMissionContainer h2{
+  color: #fff;
+}
+.ourMissionContainer h4{
+  color: #D7D7D7;
+}
+.ourMissionContainer p{
+  color: #D7D7D7;
+}
