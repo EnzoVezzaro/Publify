@@ -13,9 +13,9 @@ import firestore from "firebase/firestore";
 // firebase Auth UI
 import * as firebaseui from 'firebaseui';
 // Components
-import Menu from "./Menu.js";
-import DetailList from "./DetailList.js";
-import MyCards from "./MyCards.js";
+import Menu from "../../components/homepage/Menu.js";
+import DetailList from "../../components/homepage/DetailList.js";
+import MyCards from "../../components/homepage/MyCards.js";
 // Style
 import { Container, Row, Col } from 'reactstrap';
 import './Features.css';
@@ -56,27 +56,27 @@ class Features extends React.Component {
         </Row>
         <Row xs={'12'} className={'featuresDetails'}>
           <Col sm={{ size: 5 }} style={{ marginTop: '4%' }}>
-            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../assets/img/features_customization.jpg')} id={'featuresCard1'} />
-            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../assets/img/features_customization.jpg')} id={'featuresCard2'} />
-            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../assets/img/features_customization.jpg')} id={'featuresCard3'} />
+            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../../assets/img/features_customization.jpg')} id={'featuresCard1'} />
+            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../../assets/img/features_customization.jpg')} id={'featuresCard2'} />
+            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../../assets/img/features_customization.jpg')} id={'featuresCard3'} />
           </Col>
           <Col sm={{ size: 5 }} >
             <DetailList
               title={'Clean Design'}
               subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
-              image={require('../assets/icons/pcIcon.svg')} />
+              image={require('../../assets/icons/pcIcon.svg')} />
             <DetailList
               title={'Dedicated Support'}
               subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
-              image={require('../assets/icons/customerService.svg')} />
+              image={require('../../assets/icons/customerService.svg')} />
             <DetailList
               title={'Customize Your Apps'}
               subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
-              image={require('../assets/icons/customazible.svg')} />
+              image={require('../../assets/icons/customazible.svg')} />
             <DetailList
               title={'Multiple Apps'}
               subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
-              image={require('../assets/icons/multipleApps.svg')} />
+              image={require('../../assets/icons/multipleApps.svg')} />
           </Col>
         </Row>
       </Container>

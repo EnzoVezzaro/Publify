@@ -13,9 +13,9 @@ import firestore from "firebase/firestore";
 // firebase Auth UI
 import * as firebaseui from 'firebaseui';
 // Components
-import Menu from "./Menu.js";
-import DetailList from "./DetailList.js";
-import MyCards from "./MyCards.js";
+import Menu from "../../components/homepage/Menu.js";
+import DetailList from "../../components/homepage/DetailList.js";
+import MyCards from "../../components/homepage/MyCards.js";
 // Style
 import { Container, Row, Col } from 'reactstrap';
 import './VideoHero.css';
@@ -50,7 +50,7 @@ class VideoHero extends React.Component {
       <Container className={'videoContainer'} fluid={true} >
         <Row xs={'12'} className={'videoContent'}>
           <Col sm={{ size: 6 }} className={'videoPlay'} >
-            <img src={require('../assets/icons/videoPlay.svg')} className={'videoPlayImg'} />
+            <img src={require('../../assets/icons/videoPlay.svg')} className={'videoPlayImg'} />
           </Col>
           <Col sm={{ size: 6 }} className={'videoPunchline'} >
             <h3>{ this.state.title }</h3>

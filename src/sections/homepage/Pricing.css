@@ -1,0 +1,8 @@
+.pricingContainer{ padding-top: 100px; }
+.pricingContainer .pricingPunchline{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.pricingContainer .pricingFree {  }
+.pricingContainer .pricingPremium{  }
+.pricingContainer .pricingBusiness{ }

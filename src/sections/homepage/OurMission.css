@@ -1,6 +1,6 @@
 .ourMissionContainer{
   height: auto;
-  background-image: url('../assets/img/ourMissionBackground.svg');
+  background-image: url('../../assets/img/ourMissionBackground.svg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0px;

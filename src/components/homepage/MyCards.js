@@ -48,7 +48,7 @@ class MyCards extends React.Component {
               <CardSubtitle className={'featuresCardSubtitle'} ><p>{ this.state.subtitle }</p></CardSubtitle>
             </div>
             <div className={'featuresButton'}>
-              <img className={'featuresCardBodyImage'} src={require('../assets/icons/features_button.svg')} />
+              <img className={'featuresCardBodyImage'} src={require('../../assets/icons/features_button.svg')} />
             </div>
           </CardBody>
         </Card>

@@ -45,12 +45,12 @@ class OurMission extends React.Component {
             </Col>
           </Row>
           <Row xs={'12'} >
-            <Details />
-            <Details />
-            <Details />
-            <Details />
-            <Details />
-            <Details />
+            <OurMissionDetails />
+            <OurMissionDetails />
+            <OurMissionDetails />
+            <OurMissionDetails />
+            <OurMissionDetails />
+            <OurMissionDetails />
           </Row>
         </Container>
       </Container>
@@ -58,7 +58,7 @@ class OurMission extends React.Component {
   }
 }
 
-function Details(props) {
+function OurMissionDetails(props) {
   return (
       <Col xs={'12'} md={'4'} lg={'4'} className={'ourMissionDetails'} >
         <h4>{ 'Clean Design' }</h4>

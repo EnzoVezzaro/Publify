@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 // Style
 import { Container, Row, Col, Media } from 'reactstrap';
+import CustomizeDetails from '../../components/homepage/CustomizeDetails.js';
 import './CustomizeYourWay.css';
 
 class CustomizeYourWay extends React.Component {
@@ -46,27 +47,18 @@ class CustomizeYourWay extends React.Component {
                 </Col>
               </Row>
               <Row className={'customizeDetails'}>
-                <Details />
-                <Details />
-                <Details />
+                <CustomizeDetails />
+                <CustomizeDetails />
+                <CustomizeDetails />
               </Row>
             </Col>
             <Col xs={'12'} md={'6'} className={'customizeRight'} >
-              <img src={require('../assets/img/customizeiPhone.svg')} />
+              <img src={require('../../assets/img/customizeiPhone.svg')} />
             </Col>
           </Row>
       </Container>
     );
   }
-}
-
-function Details(props) {
-  return (
-      <Col xs={'12'} className={'customizeDetails'} >
-        <h4>{ 'Clean Design' }</h4>
-        <p>{ 'Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her.'}</p>
-      </Col>
-  );
 }
 
 export default CustomizeYourWay;

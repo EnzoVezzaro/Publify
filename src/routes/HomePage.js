@@ -17,13 +17,13 @@ import firestore from "firebase/firestore";
 // firebase Auth UI
 import * as firebaseui from 'firebaseui';
 // Components
-import Menu from "../components/Menu.js";
-import Hero from "../components/Hero.js";
-import Features from "../components/Features.js";
-import VideoHero from "../components/VideoHero.js";
-import OurMission from "../components/OurMission.js";
-import CustomizeYourWay from "../components/CustomizeYourWay.js";
-import Pricing from "../components/Pricing.js";
+import Menu from "../components/homepage/Menu.js";
+import Hero from "../sections/homepage/Hero.js";
+import Features from "../sections/homepage/Features.js";
+import VideoHero from "../sections/homepage/VideoHero.js";
+import OurMission from "../sections/homepage/OurMission.js";
+import CustomizeYourWay from "../sections/homepage/CustomizeYourWay.js";
+import Pricing from "../sections/homepage/Pricing.js";
 import "../css/Containers.css";
 
 class HomePage extends React.Component {

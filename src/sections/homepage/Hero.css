@@ -1,6 +1,6 @@
 .heroContainer{
   height: 600px;
-  background-image: url('../assets/img/heroBackground.png');
+  background-image: url('../../assets/img/heroBackground.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -9,7 +9,7 @@
   min-width: 100vw;
 }
 .heroContainer .heroBackgroundLayers{
-  background-image: url('../assets/img/heroBackgroundLayer3.png');
+  background-image: url('../../assets/img/heroBackgroundLayer3.png');
   position: absolute;
   height: 600px;
   width: 100vw;
@@ -19,7 +19,7 @@
   margin: 0;
 }
 .heroContainer .heroBackgroundLayers .heroBackgroundLayer1{
-  background-image: url('../assets/img/heroBackgroundLayer1.png');
+  background-image: url('../../assets/img/heroBackgroundLayer1.png');
   position: absolute;
   height: 600px;
   width: 100vw;
@@ -30,7 +30,7 @@
   z-index: 3;
 }
 .heroContainer .heroBackgroundLayers .heroBackgroundLayer2{
-  background-image: url('../assets/img/heroBackgroundLayer2.png');
+  background-image: url('../../assets/img/heroBackgroundLayer2.png');
   position: absolute;
   height: 600px;
   width: 100vw;
@@ -42,7 +42,7 @@
   width: 100vw;
   height: 100%;
   position: absolute;
-  background-image: url('../assets/img/heroPhone.png');
+  background-image: url('../../assets/img/heroPhone.png');
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: 20% 10vh;

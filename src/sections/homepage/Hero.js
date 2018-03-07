@@ -14,8 +14,8 @@ import firestore from "firebase/firestore";
 // firebase Auth UI
 import * as firebaseui from 'firebaseui';
 // Components
-import Menu from "./Menu.js";
-import MyButton from "./MyButton.js";
+import Menu from "../../components/homepage/Menu.js";
+import MyButton from "../../components/homepage/MyButton.js";
 // Style
 import { Container, Row, Col } from 'reactstrap';
 

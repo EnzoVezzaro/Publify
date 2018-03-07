@@ -1,6 +1,6 @@
 .videoContainer{
   height: 400px;
-  background-image: url('../assets/img/videoBackground.jpg');
+  background-image: url('../../assets/img/videoBackground.jpg');
 }
 .videoContainer .videoContent{ height: 100%; }
 .videoContainer .videoContent .videoPlay{ display: flex; justify-content: center; align-items: center;}
