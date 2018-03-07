@@ -1,0 +1,48 @@
+.pricingContainer{ padding-top: 100px; }
+.pricingContainer .pricingPunchline{
+  text-align: center;
+  margin-bottom: 100px; 
+}
+.pricingContainer .pricingFree {  }
+.pricingContainer .pricingPremium{  }
+.pricingContainer .pricingBusiness{ }
+
+/* Pricing Table */
+.pricingContainer .princingTable{
+  height: 600px;
+  box-shadow: 5px 5px 35px 0 rgba(0,0,0,0.2);
+  width: 90%;
+  border: 0;
+  margin-bottom: 30px;
+}
+.pricingContainer .princingTable .princingTablePunchline{ padding: 70px 20px 20px 20px; justify-content: center; }
+.pricingContainer .princingTable .princingTablePunchline h4{ text-transform: capitalize;}
+.pricingContainer .princingTable .princingTablePrices{ color: #7954B6; justify-content: center; margin-bottom: 50px; }
+.pricingContainer .princingTable .princingTablePrices .princingTableCurrency{ height: 100%; margin-top: 20px; font-size: 24px; }
+.pricingContainer .princingTable .princingTablePrices .princingTablePrice{ font-size: 72px; height: 88px; margin-right: 10px; }
+.pricingContainer .princingTable .princingTablePrices .princingMounth{ align-self: flex-end; }
+
+.pricingContainer .princingTable .princingTableFeatures{ text-align: left; }
+.pricingContainer .princingTable .princingTableFeatures li{
+    color: #565656;
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pricingContainer .princingTable .princingTableFeatures li div{
+    background-image: url('../assets/img/pricingCheck.svg');
+    width: 30px;
+    height: 30px;
+}
+
+.princingTable .princingTableCTA{
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  margin-bottom: 40px;
+}

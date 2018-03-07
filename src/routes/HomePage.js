@@ -23,6 +23,7 @@ import Features from "../components/Features.js";
 import VideoHero from "../components/VideoHero.js";
 import OurMission from "../components/OurMission.js";
 import CustomizeYourWay from "../components/CustomizeYourWay.js";
+import Pricing from "../components/Pricing.js";
 import "../css/Containers.css";
 
 class HomePage extends React.Component {
@@ -60,6 +61,8 @@ class HomePage extends React.Component {
           <OurMission />
 
           <CustomizeYourWay />
+
+          <Pricing />
 
       </div>
     );

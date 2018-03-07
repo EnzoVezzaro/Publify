@@ -15,7 +15,8 @@ class MyButton extends React.Component {
     super(props);
     this.state ={
       color: this.props.color,
-      label: this.props.label
+      label: this.props.label,
+      link: this.props.link
     }
   }
 
@@ -33,6 +34,10 @@ class MyButton extends React.Component {
 
   }
 
+  _clicked(link){
+    console.log(`clicked: ${link}`);
+  }
+
   render() {
     const MyStyle = {
       backgroundColor: '#7957B2',
@@ -48,7 +53,7 @@ class MyButton extends React.Component {
 
     return (
       <div>
-        <Button style={ MyStyle } outline color={this.state.color} size={'sm'}>{ this.state.label.toUpperCase() }</Button>
+        <Button style={ MyStyle } outline onClick={ () => this._clicked(this.state.link) } color={this.state.color} size={'sm'}>{ this.state.label.toUpperCase() }</Button>
       </div>
     );
   }

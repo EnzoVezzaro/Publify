@@ -53,7 +53,7 @@ class Hero extends React.Component {
               <Col className={'heroContent'} sm={{ size: 6, offset: 6 }} >
                 <h1 className={'heroPuchline'}>{ this.state.title }</h1>
                 <h5 className={'heroSubtitle'}>{ this.state.subtitle }</h5>
-                <MyButton label={'get starter'} color={'primary'}></MyButton>
+                <MyButton label={'get starter'} color={'primary'} link={''}></MyButton>
               </Col>
             </Row>
             <Row xs={'12'} noGutters={true} className={'heroBackgroundLayer2'} />

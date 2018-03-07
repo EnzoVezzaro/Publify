@@ -41,7 +41,7 @@ class CustomizeYourWay extends React.Component {
             <Col xs={'12'} md={'6'} className={'customizeLeft'} >
               <Row className={'customizePunchline'}>
                 <Col xs={'12'} >
-                  <h1 style={{ color:'#7954B6' }} >{ this.state.title }</h1>
+                  <h2>{ this.state.title }</h2>
                   <p>{ this.state.subtitle }</p>
                 </Col>
               </Row>
