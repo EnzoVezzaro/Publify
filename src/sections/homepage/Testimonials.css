@@ -1,0 +1,9 @@
+.testmonialContainer{ padding-top: 100px; }
+.testmonialContainer .testmonialPunchline{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.testmonialContainer .testimonialCarousel{
+  justify-content: center;
+  align-items: center;
+}

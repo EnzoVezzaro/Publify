@@ -15,33 +15,11 @@ class PricingTable extends React.Component{
     super(props);
 
     this.state = {
-      planTitle: this.props.planTitle,
+      planTitle: this.props.plan,
       currency: this.props.currency,
       price: this.props.price,
       cta: this.props.cta,
-      freeFeatures: [ 'Access to our Apps', 'Customization', 'Account Info' ],
-      premiumFeatures: [ 'Access to our Apps', 'Customization', 'Account Info', 'No Ads' ],
-      businessFeatures: [ 'Business', 'Customization', 'Account Info', 'No Ads'],
-      errorFeatures: [ 'empty'],
-    }
-
-    switch(this.state.planTitle) {
-       case "free": {
-          this.state.plan = this.state.freeFeatures;
-          break;
-       }
-       case "premium": {
-          this.state.plan = this.state.premiumFeatures;
-          break;
-       }
-       case "business": {
-          this.state.plan = this.state.businessFeatures;
-          break;
-       }
-       default: {
-          this.state.plan = this.state.errorFeatures;
-          break;
-       }
+      features: this.props.features,
     }
 
   }
@@ -60,7 +38,7 @@ class PricingTable extends React.Component{
           </Row>
           <Row>
             <ul className={'princingTableFeatures'}>
-              { this.state.plan.map((feature,i) => <li key={i}><div></div>{ feature }</li> ) }
+              { this.state.features.map((feature,i) => <li key={i}><div></div>{ feature }</li> ) }
             </ul>
           </Row>
           <Row className={'princingTableCTA'}>

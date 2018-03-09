@@ -5,13 +5,6 @@ import {
   NavLink,
   buttom
 } from 'react-router-dom';
-// DB
-import firebase from 'firebase';
-import auth from "firebase/auth";
-import database from "firebase/database";
-import firestore from "firebase/firestore";
-// firebase Auth UI
-import * as firebaseui from 'firebaseui';
 // Components
 import Menu from "../../components/homepage/Menu.js";
 import DetailList from "../../components/homepage/DetailList.js";
@@ -19,14 +12,18 @@ import MyCards from "../../components/homepage/MyCards.js";
 // Style
 import { Container, Row, Col } from 'reactstrap';
 import './Features.css';
+// Import Labels
+import { FEATURES } from '../../utils/labels/homepage.js';
 
 class Features extends React.Component {
 
   constructor(props){
     super(props);
     this.state ={
-      title: 'Amazing Features',
-      subtitle: 'Tempora similique excepturi obcaecati, maiores nostrum esse illo in soluta at saepe perspiciatis eos quasi laudantium sunt ad quaerat?'
+      title: FEATURES.title,
+      subtitle: FEATURES.subtitle,
+      cards: FEATURES.cards,
+      details: FEATURES.details,
     }
   }
 
@@ -44,6 +41,8 @@ class Features extends React.Component {
 
   }
 
+  // TODO: Move require() to component (MyCards)
+  // WARNING: Require() can't take this.state at the moment 03/18
 
   render() {
     return (
@@ -56,26 +55,26 @@ class Features extends React.Component {
         </Row>
         <Row xs={'12'} className={'featuresDetails'}>
           <Col sm={{ size: 5 }} style={{ marginTop: '4%' }}>
-            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../../assets/img/features_customization.jpg')} id={'featuresCard1'} />
-            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../../assets/img/features_customization.jpg')} id={'featuresCard2'} />
-            <MyCards title={'Customization'} subtitle={'style the way you want'} image={require('../../assets/img/features_customization.jpg')} id={'featuresCard3'} />
+            <MyCards title={ this.state.cards.option_1.title } subtitle={ this.state.subtitle } image={ require('../../assets/img/features_customization.jpg') } id={ this.state.cards.option_1.id } />
+            <MyCards title={ this.state.cards.option_1.title } subtitle={ this.state.subtitle } image={ require('../../assets/img/features_customization.jpg') } id={ this.state.cards.option_2.id } />
+            <MyCards title={ this.state.cards.option_1.title } subtitle={ this.state.subtitle } image={ require('../../assets/img/features_customization.jpg') } id={ this.state.cards.option_3.id } />
           </Col>
           <Col sm={{ size: 5 }} >
             <DetailList
-              title={'Clean Design'}
-              subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
+              title={this.state.details.option_1.title}
+              subtitle={this.state.details.option_1.subtitle}
               image={require('../../assets/icons/pcIcon.svg')} />
             <DetailList
-              title={'Dedicated Support'}
-              subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
+              title={this.state.details.option_2.title}
+              subtitle={this.state.details.option_2.subtitle}
               image={require('../../assets/icons/customerService.svg')} />
             <DetailList
-              title={'Customize Your Apps'}
-              subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
+              title={this.state.details.option_3.title}
+              subtitle={this.state.details.option_3.subtitle}
               image={require('../../assets/icons/customazible.svg')} />
             <DetailList
-              title={'Multiple Apps'}
-              subtitle={'Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.'}
+              title={this.state.details.option_4.title}
+              subtitle={this.state.details.option_4.subtitle}
               image={require('../../assets/icons/multipleApps.svg')} />
           </Col>
         </Row>

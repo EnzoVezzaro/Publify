@@ -3,6 +3,18 @@
   text-align: center;
   margin-bottom: 100px;
 }
-.pricingContainer .pricingFree {  }
-.pricingContainer .pricingPremium{  }
-.pricingContainer .pricingBusiness{ }
+.pricingContainer .pricingFree{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.pricingContainer .pricingPremium{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.pricingContainer .pricingBusiness{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

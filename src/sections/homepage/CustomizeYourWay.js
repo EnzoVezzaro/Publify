@@ -9,15 +9,19 @@ import {
 import { Container, Row, Col, Media } from 'reactstrap';
 import CustomizeDetails from '../../components/homepage/CustomizeDetails.js';
 import './CustomizeYourWay.css';
+// Import Labels
+import { CUSTOMIZEYOURWAY } from '../../utils/labels/homepage.js';
 
 class CustomizeYourWay extends React.Component {
 
   constructor(props){
     super(props);
     this.state ={
-      title: 'Customize Your Way',
-      subtitle: 'Tempora similique excepturi obcaecati, maiores nostrum esse illo in soluta at saepe perspiciatis eos quasi laudantium sunt ad quaerat?'
+      title: CUSTOMIZEYOURWAY.title,
+      subtitle: CUSTOMIZEYOURWAY.subtitle,
+      details: CUSTOMIZEYOURWAY.details
     }
+
   }
 
   componentDidMount(){
@@ -34,7 +38,6 @@ class CustomizeYourWay extends React.Component {
 
   }
 
-
   render() {
     return (
       <Container className={'customizeContainer'}>
@@ -47,9 +50,9 @@ class CustomizeYourWay extends React.Component {
                 </Col>
               </Row>
               <Row className={'customizeDetails'}>
-                <CustomizeDetails />
-                <CustomizeDetails />
-                <CustomizeDetails />
+                <CustomizeDetails title={ this.state.details.option_1.title } body={ this.state.details.option_1.body } />
+                <CustomizeDetails title={ this.state.details.option_2.title } body={ this.state.details.option_2.body } />
+                <CustomizeDetails title={ this.state.details.option_3.title } body={ this.state.details.option_3.body } />
               </Row>
             </Col>
             <Col xs={'12'} md={'6'} className={'customizeRight'} >

@@ -8,14 +8,17 @@ import {
 // Style
 import { Container, Row, Col, Media } from 'reactstrap';
 import './OurMission.css';
+// Import Labels
+import { OURMISSION } from '../../utils/labels/homepage.js';
 
 class OurMission extends React.Component {
 
   constructor(props){
     super(props);
     this.state ={
-      title: 'Our Mission',
-      subtitle: 'Lorem ipsum dolor sit amet proin gravida nibh vel velit'
+      title: OURMISSION.title,
+      body: OURMISSION.body,
+      details: OURMISSION.details
     }
   }
 
@@ -41,16 +44,16 @@ class OurMission extends React.Component {
           <Row xs={'12'} className={'ourMissionPunchline'}>
             <Col xs={'12'} md={'6'} >
               <h2>{ this.state.title }</h2>
-              <p>{ this.state.subtitle }</p>
+              <p>{ this.state.body }</p>
             </Col>
           </Row>
           <Row xs={'12'} >
-            <OurMissionDetails />
-            <OurMissionDetails />
-            <OurMissionDetails />
-            <OurMissionDetails />
-            <OurMissionDetails />
-            <OurMissionDetails />
+            <OurMissionDetails title={ this.state.details.option_1.title } body={ this.state.details.option_1.body } />
+            <OurMissionDetails title={ this.state.details.option_2.title } body={ this.state.details.option_2.body } />
+            <OurMissionDetails title={ this.state.details.option_3.title } body={ this.state.details.option_3.body } />
+            <OurMissionDetails title={ this.state.details.option_4.title } body={ this.state.details.option_4.body } />
+            <OurMissionDetails title={ this.state.details.option_5.title } body={ this.state.details.option_5.body } />
+            <OurMissionDetails title={ this.state.details.option_6.title } body={ this.state.details.option_6.body } />
           </Row>
         </Container>
       </Container>
@@ -61,8 +64,8 @@ class OurMission extends React.Component {
 function OurMissionDetails(props) {
   return (
       <Col xs={'12'} md={'4'} lg={'4'} className={'ourMissionDetails'} >
-        <h4>{ 'Clean Design' }</h4>
-        <p>{ 'Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her.'}</p>
+        <h4>{ props.title }</h4>
+        <p>{ props.body }</p>
       </Col>
   );
 }

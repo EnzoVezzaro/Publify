@@ -1,0 +1,15 @@
+.blogContainer{ padding-top: 100px; }
+.blogContainer .blogPunchline{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.blogContainer .blogPosts{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.blogContainer .blogPosts .blogPost{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

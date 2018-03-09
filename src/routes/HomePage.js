@@ -24,6 +24,8 @@ import VideoHero from "../sections/homepage/VideoHero.js";
 import OurMission from "../sections/homepage/OurMission.js";
 import CustomizeYourWay from "../sections/homepage/CustomizeYourWay.js";
 import Pricing from "../sections/homepage/Pricing.js";
+import Testimonials from "../sections/homepage/Testimonials.js";
+import Blog from "../sections/homepage/Blog.js";
 import "../css/Containers.css";
 
 class HomePage extends React.Component {
@@ -63,6 +65,10 @@ class HomePage extends React.Component {
           <CustomizeYourWay />
 
           <Pricing />
+
+          <Testimonials />
+
+          <Blog />
 
       </div>
     );

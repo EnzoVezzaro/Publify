@@ -14,8 +14,8 @@ class CustomizeDetails extends React.Component {
   constructor(props){
     super(props);
     this.state ={
-      title: 'Customize Your Way',
-      subtitle: 'Tempora similique excepturi obcaecati, maiores nostrum esse illo in soluta at saepe perspiciatis eos quasi laudantium sunt ad quaerat?'
+      title: this.props.title,
+      body: this.props.body
     }
   }
 
@@ -37,8 +37,8 @@ class CustomizeDetails extends React.Component {
   render() {
     return (
       <Col xs={'12'} className={'customizeDetails'} >
-        <h4>{ 'Clean Design' }</h4>
-        <p>{ 'Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her.'}</p>
+        <h4>{ this.state.title }</h4>
+        <p>{ this.state.body }</p>
       </Col>
     );
   }

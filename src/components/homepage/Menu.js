@@ -19,13 +19,8 @@ import {
   DropdownItem,
   Container } from 'reactstrap';
 import './Menu.css';
-// DB
-import firebase from 'firebase';
-import auth from "firebase/auth";
-import database from "firebase/database";
-import firestore from "firebase/firestore";
-// firebase Auth UI
-import * as firebaseui from 'firebaseui';
+// Import Labels
+import { MENU, BRAND } from '../../utils/labels/homepage.js';
 
 export default class Menu extends React.Component {
   constructor(props) {
@@ -33,7 +28,7 @@ export default class Menu extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
   toggle() {
@@ -45,30 +40,30 @@ export default class Menu extends React.Component {
     return (
       <div className={"menuContainer"}>
         <Navbar color="faded" light expand="md">
-          <NavbarBrand href="/">MoviApp</NavbarBrand>
+          <NavbarBrand href="/">{ BRAND.logo }</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto navMenu" navbar>
               <NavItem className="navMenuItems">
-                <NavLink exact to="/">{'Home'.toUpperCase() }</NavLink>
+                <NavLink exact to="/">{ MENU.links.home.toUpperCase() }</NavLink>
               </NavItem>
               <NavItem className="navMenuItems">
-                <NavLink exact to="/authentication">{'Features'.toUpperCase() }</NavLink>
+                <NavLink exact to="/authentication">{ MENU.links.feature.toUpperCase() }</NavLink>
               </NavItem>
               <NavItem className="navMenuItems">
-                <NavLink exact to="/about">{'About'.toUpperCase() }</NavLink>
+                <NavLink exact to="/about">{ MENU.links.about.toUpperCase() }</NavLink>
               </NavItem>
               <NavItem className="navMenuItems">
-                <NavLink exact to="/pricing">{'Pricing'.toUpperCase() }</NavLink>
+                <NavLink exact to="/pricing">{ MENU.links.pricing.toUpperCase() }</NavLink>
               </NavItem>
               <NavItem className="navMenuItems">
-                <NavLink exact to="/blog">{'Blog'.toUpperCase() }</NavLink>
+                <NavLink exact to="/blog">{ MENU.links.blog.toUpperCase() }</NavLink>
               </NavItem>
               <NavItem className="navMenuItems">
-                <NavLink exact to="/login">{'Login'.toUpperCase() }</NavLink>
+                <NavLink exact to="/login">{ MENU.links.login.toUpperCase() }</NavLink>
               </NavItem>
               <NavItem className="navMenuItems TryNow">
-                <NavLink exact to="/signup">{ "Try Now".toUpperCase() }</NavLink>
+                <NavLink exact to="/signup">{ MENU.links.tryNow.toUpperCase() }</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

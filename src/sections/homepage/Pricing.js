@@ -10,19 +10,22 @@ import { Container, Row, Col, Media } from 'reactstrap';
 import MyButton from "../../components/homepage/MyButton.js";
 import PricingTable from "../../components/homepage/PricingTable.js";
 import './Pricing.css';
+// Import Labels
+import { PRICING } from '../../utils/labels/homepage.js';
 
 class Pricing extends React.Component {
-
   constructor(props){
     super(props);
     this.state ={
-      title: 'Pricing Packages',
-      subtitle: 'Lorem ipsum dolor sit amet proin gravida nibh vel velit'
+      title: PRICING.title,
+      subtitle: PRICING.subtitle,
+      plans: PRICING.plans
     }
+
   }
 
-  componentDidMount(){
-
+  componentWillMount(){
+    //LABELS.setLanguage('it');
   }
 
   componentWillReceiveProps(newProps) {
@@ -47,13 +50,13 @@ class Pricing extends React.Component {
           </Row>
           <Row xs={'12'} >
             <Col xs={'12'} md={'4'} className={'pricingFree'} >
-              <PricingTable price={'0'} planTitle={'free'} currency={'$'} cta={"it's free!"} />
+              <PricingTable price={this.state.plans.option_1.price} plan={this.state.plans.option_1.plan} currency={this.state.plans.option_1.currency} cta={this.state.plans.option_1.cta} features={ this.state.plans.option_1.features } />
             </Col>
             <Col xs={'12'} md={'4'} className={'pricingPremium'} >
-              <PricingTable price={'19'} planTitle={'premium'} currency={'$'} cta={"Choose plan"} />
+              <PricingTable price={this.state.plans.option_2.price} plan={this.state.plans.option_2.plan} currency={this.state.plans.option_2.currency} cta={this.state.plans.option_2.cta} features={ this.state.plans.option_2.features } />
             </Col>
             <Col xs={'12'} md={'4'} className={'pricingBusiness'} >
-              <PricingTable price={'50'} planTitle={'business'} currency={'$'} cta={"Choose plan"} />
+              <PricingTable price={this.state.plans.option_3.price} plan={this.state.plans.option_3.plan} currency={this.state.plans.option_3.currency} cta={this.state.plans.option_3.cta} features={ this.state.plans.option_3.features } />
             </Col>
           </Row>
       </Container>
