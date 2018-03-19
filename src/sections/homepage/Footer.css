@@ -1,0 +1,14 @@
+.footerContainer{
+  height: 500px;
+  padding: 0;
+  padding-top: 150px;
+  margin: 0;
+  background-image: url('../../assets/img/footerDecorationsHeader.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 150px;
+}
+.footerContainer .headerFooter{
+  background-color: #8d5cdd;
+  height: 100%;
+}

@@ -11,6 +11,13 @@ font-family: 'Lato', sans-serif;
 /*
 Colors
 */
+.primary-color{
+  color: #7954B6;
+}
+
+.secondary-color{
+  color: #565656;
+}
 
 body {
   margin: 0;

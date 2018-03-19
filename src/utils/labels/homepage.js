@@ -264,3 +264,26 @@ export let BLOG = new LocalizedStrings({
    subtitle: 'bla bla bla'
  }
 });
+
+
+export let DOWNLOAD = new LocalizedStrings({
+ en:{
+   title: 'Download our apps from',
+   subtitle: 'A better way to present your app using fully featured appsperia template. Now available on the App Store and Play Store!',
+ },
+ it: {
+   title: 'Lista Prezzi',
+   subtitle: 'bla bla bla'
+ }
+});
+
+export let FOOTER = new LocalizedStrings({
+ en:{
+   title: 'Download our apps from',
+   subtitle: 'A better way to present your app using fully featured appsperia template. Now available on the App Store and Play Store!',
+ },
+ it: {
+   title: 'Lista Prezzi',
+   subtitle: 'bla bla bla'
+ }
+});

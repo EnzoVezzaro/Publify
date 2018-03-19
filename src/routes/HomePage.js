@@ -26,6 +26,8 @@ import CustomizeYourWay from "../sections/homepage/CustomizeYourWay.js";
 import Pricing from "../sections/homepage/Pricing.js";
 import Testimonials from "../sections/homepage/Testimonials.js";
 import Blog from "../sections/homepage/Blog.js";
+import Download from "../sections/homepage/Download.js";
+import Footer from "../sections/homepage/Footer.js";
 import "../css/Containers.css";
 
 class HomePage extends React.Component {
@@ -69,6 +71,10 @@ class HomePage extends React.Component {
           <Testimonials />
 
           <Blog />
+
+          <Download />
+
+          <Footer />
 
       </div>
     );
