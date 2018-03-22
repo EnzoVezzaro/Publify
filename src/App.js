@@ -19,7 +19,6 @@ import * as firebaseui from 'firebaseui';
 import HomePage from './routes/HomePage.js';
 import Dashboard from './routes/Dashboard.js';
 import Authentication from './routes/Authentication.js';
-import Signup from './routes/Signup.js';
 // Components
 
 class App extends React.Component{
@@ -51,9 +50,8 @@ class App extends React.Component{
     return (
       <Router>
         <div>
-          <Route exact path="/" render={() => <HomePage FBConfig={this.state.config} />}/>
+          <Route exact path="/" render={() => <HomePage />}/>
           <Route path="/authentication" render={() => <Authentication FBConfig={this.state.config} />}/>
-          <Route path="/signup" component={Signup}/>
           <Route path="/dashboard" component={Dashboard}/>
         </div>
       </Router>

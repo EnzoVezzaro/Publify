@@ -38,8 +38,8 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <Container className={'footerContainer'} fluid={'true'} >
-        <Container className={'headerFooter'} fluid={'true'}>
+      <Container className={'footerContainer'} fluid={true} >
+        <Container className={'headerFooter'} fluid={true}>
         </Container>
       </Container>
     );
