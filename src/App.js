@@ -28,14 +28,14 @@ class App extends React.Component{
     this.state={
     }
 
-    // Initialize Firebase || TODO: Move this to env.file
+    // Initialize Firebase || NOTE: Build Env Var in Netlify
     this.state.config = {
-      apiKey: process.env.REACT_APP_FB_APIKEY,
-      authDomain: process.env.REACT_APP_FB_AUTHDOMAIN,
-      databaseURL: process.env.REACT_APP_FB_DATABASEURL,
-      projectId: process.env.REACT_APP_FB_PROJECTID,
-      storageBucket: process.env.REACT_APP_FB_STORAGEBUCKET,
-      messagingSenderId: process.env.REACT_APP_FB_MESSAGESENDERID
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.env.FIREBASE_DB_URL,
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
     };
 
     firebase.initializeApp(this.state.config);
