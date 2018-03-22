@@ -6,7 +6,6 @@ import {
   buttom
 } from 'react-router-dom';
 // Components
-import Menu from "../../components/homepage/Menu.js";
 import DetailList from "../../components/homepage/DetailList.js";
 import MyCards from "../../components/homepage/MyCards.js";
 // Style

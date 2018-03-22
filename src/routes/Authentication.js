@@ -19,11 +19,12 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth.js';
 import * as authFB from '../utils/firebase/utils.js';
 
 class Authentication extends React.Component {
-
-  // The component's Local state.
-  state = {
-    signedIn: false // Local signed-in state.
-  };
+  constructor(props){
+    super(props);
+    this.state ={
+      signedIn: false // Local signed-in state.
+    }
+  }
 
   // Configure FirebaseUI.
   uiConfig = {

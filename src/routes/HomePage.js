@@ -17,8 +17,8 @@ import firestore from "firebase/firestore";
 // firebase Auth UI
 import * as firebaseui from 'firebaseui';
 // Components
-import Menu from "../components/homepage/Menu.js";
-import Hero from "../sections/homepage/Hero.js";
+import Menu from "../components/commons/Menu.js";
+import Hero from "../components/commons/Hero.js";
 import Features from "../sections/homepage/Features.js";
 import VideoHero from "../sections/homepage/VideoHero.js";
 import OurMission from "../sections/homepage/OurMission.js";
@@ -56,7 +56,7 @@ class HomePage extends React.Component {
       <div>
           <Menu />
 
-          <Hero />
+          <Hero isHome={true} />
 
           <Features />
 
