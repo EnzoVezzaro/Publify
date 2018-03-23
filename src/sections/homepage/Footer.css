@@ -1,12 +1,12 @@
 .footerContainer{
   height: 500px;
   padding: 0;
-  padding-top: 150px;
+  padding-top: 10%;
   margin: 0;
   background-image: url('../../assets/img/footerDecorationsHeader.svg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: auto 150px;
+  background-size: 100%;
 }
 .footerContainer .headerFooter{
   background-color: #8d5cdd;

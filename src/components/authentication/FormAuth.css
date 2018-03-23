@@ -1,0 +1,239 @@
+/**
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.firebaseui-container {
+  background: rgba(0, 0, 0, 0.05);
+  margin: 0px !important;
+  min-height: 150px;
+  padding-top: 10px;
+  border-radius: 0px !important;
+  box-shadow: none;
+  max-width: 100% !important;
+}
+.firebaseui-card-content, .firebaseui-card-footer{
+  padding: 0 !important;
+}
+.firebaseui-container.firebaseui-page-provider-sign-in {
+  background: transparent;
+  box-shadow: none;
+  min-height: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.firebaseui-container.firebaseui-id-page-callback {
+  background: transparent;
+  box-shadow: none;
+  margin-top: 40px;
+  height: 84px;
+  min-height: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.firebaseui-card-header {
+  display: none;
+}
+.firebaseui-subtitle, .firebaseui-text {
+  color: rgba(255, 255, 255, 0.87);
+}
+.firebaseui-form-actions .mdl-button--raised.mdl-button--colored.firebaseui-button {
+  background: rgba(0, 0, 0, 0.1);
+}
+.firebaseui-id-dismiss-info-bar {
+  display: block;
+}
+.firebaseui-info-bar {
+  border: 0;
+  border-radius: 10px;
+  left: 5%;
+  right: 5%;
+  top: 10%;
+  bottom: 10%;
+}
+.firebaseui-idp-list, .firebaseui-idp-list>.firebaseui-list-item{
+  margin: 0 !important;
+}
+.firebaseui-idp-button{
+  max-width: 100% !important;
+  margin-bottom: 1rem !important;
+  box-shadow: none !important;
+  padding: 0.8rem 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  border-radius: 0.25rem !important;
+}
+.firebaseui-idp-google{
+  background-color: #D62D20 !important;
+}
+.firebaseui-idp-google>.firebaseui-idp-text{
+  color: #fff !important;
+}
+
+/********************
+****** Remember Switcher
+*******************/
+
+.wrapper {
+  padding: 50px;
+}
+
+.toggle-component {
+  font-size: 2rem;
+  color: #171717;
+  width: 35px;
+  height: 15px;
+  background: #777777;
+  border: 1px solid #555;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color background-color 0.3s;
+}
+.toggle-component.active {
+  background: #8D5CDD;
+  border-color: #dfdfdf;
+}
+.toggle-component.active .toggle-button {
+  right: -2px;
+}
+.toggle-component .toggle-button {
+  position: absolute;
+  top: -3px;
+  right: 50%;
+  height: 20px;
+  width: 20px;
+  background: #dfdfdf;
+  box-shadow: 0 0 5px #555;
+  border-radius: 50%;
+  transition: right 0.3s;
+}
+
+/*************************
+******* Custom **********
+************************/
+
+.formAuthContainer{
+
+}
+.formAuthContainer .formAuthContent{
+  width: 70%;
+  margin: auto;
+}
+.formAuthContainer .formAuthTabs{
+  margin-bottom: 2rem;
+}
+.formAuthContainer .formAuthTabs .nav-tabs{
+  border: 0;
+}
+.formAuthContainer .formAuthTabs .nav-tabs .nav-link{
+  padding: 0.5rem 0rem;
+  margin: 0rem 1rem;
+  cursor: pointer;
+  border: 0;
+  color: #A6A8A9;
+  font-family: 'Lato', sans-serif;
+}
+.formAuthContainer .formAuthTabs .nav-tabs .nav-link:hover{
+  border: 0;
+  border-radius: 0;
+}
+.formAuthContainer .formAuthTabs .nav-tabs .nav-link.active{
+  border: 0;
+  border-bottom: 2px solid #8D5CDD;
+}
+.formAuthContainer .formAuthContentTabs .formAuth label{
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #A6A8A9;
+}
+.formAuthContainer .formAuthContentTabs .formAuth input{
+  box-shadow: 0px 0px 15px 5px #eee;
+  border: 0;
+}
+.formAuthContainer .formAuthContentTabs .formAuth input::-webkit-input-placeholder {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #A6A8A9;
+}
+.formAuthContainer .formAuthDivider{
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.formAuthContainer .formAuthDivider p{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #A6A8A9;
+}
+.formAuthContainer .formAuthFBAuth{
+  justify-content: center;
+}
+.formAuthContainer .formAuthFooterLinks{
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.formAuthContainer .formAuthFooterLinks p{
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #A6A8A9;
+}
+.formAuthContainer .formAuthFooterLinks a{
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #8D5CDD;
+}
+.formAuthContainer .formAuthContentTabs .formFooter{
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.formAuthContainer .formAuthContentTabs .formFooter .formSwitcher{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.formAuthContainer .formAuthContentTabs .formFooter .formSwitcher p{
+  margin-left: 1rem;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #A6A8A9;
+}
+.formAuthContainer .formAuthContentTabs .formFooter .formForgot p{
+  text-align: right;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #A6A8A9;
+}
+.formAuthContainer .formAuthContentTabs .formBtn{
+  width: 100%;
+  background-color: #8D5CDD;
+  padding: 0.8rem 0;
+  border: 0;
+}
+.formAuthContainer .formAuthContentTabs .formBtn:focus{
+  box-shadow: none;
+}
